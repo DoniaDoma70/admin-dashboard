@@ -1,0 +1,19 @@
+
+#dashboardSidebar{
+    left: auto;
+    right: 0px;
+}
+.dashboardNav ul{
+    float: left;
+}
+#notification{
+    right: auto;
+    left: 75px;
+}
+.dashboardContentDiv{
+    padding-left: 0;
+    margin-left: auto;
+}
+.dashboardNav .pre-scrollable{
+    left: 170px !important;
+}

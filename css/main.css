@@ -1,0 +1,724 @@
+:root{
+    --white: #fff !important;
+    --dark: #1a1c23 !important;
+    --secondary: #2e313b !important;
+    --light: #f3f0f0 !important;
+    --green: #0e9f6e !important;
+    --gray: rgb(128, 126, 126) !important;
+    --fSize: 1.25rem;
+    --teal: #0694a2 !important;
+    --blue: #3498db !important;
+    --paraLSize: 18px;
+    --paraSSize: 14px;
+}
+.light-mode{
+    --white: #fff;
+    --light: #f3f0f0;
+}
+.dark-mode{
+    --white: #2e313b !important;
+    --light: #1a1c23 !important;
+}
+body{
+    background-color: var(--light) !important;
+    
+}
+.navbarsDarkMode{
+    background-color: #2e313b;
+    color: var(--white);
+}
+/*----------------login page-----------------------*/
+.loginContainer{
+    width: 1000px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 3px 2px rgb(0 0 0 / 25%);
+}
+.loginImgContainer img{
+    width: 100%;
+}
+.loginFormContainer{
+    padding: 50px;
+}
+.loginFormContainer h1{
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(31, 30, 30);
+}
+.loginFormContainer form{
+    margin-top: 40px;
+}
+.loginFormContainer .submitForm{
+    background-color: var(--green);
+    border: 0;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.loginFormContainer .submitForm{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 17px;
+}
+.loginFormContainer .submitForm:hover{
+    background-color: #0b7451;
+    color: var(--white);
+    transition: .4s ease-in-out;
+}
+.loginContainer input{
+    color: black;
+}
+.loginContainer .loginBtn:hover{
+    text-decoration: none;
+}
+.socialandForgetPass{
+    margin-top: 30px;
+}
+.socialandForgetPass button{
+    background-color: var(--light) !important;
+    color: black !important;
+}
+.socialandForgetPass a:hover{
+    color: var(--white);
+    text-decoration: none;
+}
+.socialandForgetPass i,span{
+    font-size: 16px;
+}
+.socialandForgetPass span{
+    font-weight: 500;
+    margin-left: 10px;
+}
+.socialandForgetPass .loginFb:hover{
+    background-color: blue !important;
+    opacity: .7;
+    color: var(--white) !important;
+}
+.socialandForgetPass .loginG:hover{
+    background-color: red !important;
+    opacity: .7;
+    color: var(--white) !important;
+}
+.socialandForgetPass .ForgotAndCreateLinks{
+    color: var(--green);
+}
+.socialandForgetPass .ForgotAndCreateLinks:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+@media (max-width : 425px){
+    .loginContainer{
+        width: auto;
+        margin-left: 0px;
+    }
+    .loginImgContainer img{
+        height: 150px;
+    }
+    .loginFormContainer{
+        padding: 45px;
+        margin-top: -20px;
+    }
+    .socialandForgetPass i, span {font-size: 14px;}
+}
+/*-----------------------------------------*/
+/*-----ForgorPassword page-----*/
+.forgotPassContainer{
+    margin-top: 70px !important;
+}
+/*------------------------------------------*/
+/*--------Charts----------*/
+.canvasjs-chart-credit{
+    display: none;
+}
+/*------------------------------------------*/
+/*----addProductSidebar----*/
+.mynewProduct{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    right: 0px;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
+.productSideHead{
+    margin-top: -40px;
+    padding: 20px;
+    font-size: var(--paraSSize);
+}
+.productSideHead div{
+    background-color: var(--white);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.productSideHead h4{
+    font-weight: 500;
+    font-size: var(--fSize);
+}
+.closeProductBtn{
+    float: right;
+    margin-right: 5px;
+    margin-top: -70px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%) !important;
+}
+.productSideHead a{
+    text-align: center;
+    padding-top: 9px;
+}
+.productSideHead svg{
+    width: 20px;
+    height: 20px;
+    color: red;
+}
+.productSideBody{
+    padding: 20px;
+}
+.productSideBody .DragImg{
+    border-color: rgb(168, 165, 165);
+    width: 400px;
+    line-height: .9;
+    text-align: center;
+    padding: 20px;
+}
+.productSideBody .DragImg label{
+    margin-left: 20px;
+}
+.productSideBody .DragImg svg{
+    width: 30px;
+    height: 30px;
+    color: var(--green);
+}
+.productSideBody .DragImg i{
+    color: rgb(168, 165, 165);
+}
+.productSideBody input, textarea{
+    font-size: var(--paraSSize);
+    width: 400px;
+}
+.productSideBody p{
+    font-size: var(--paraSSize);
+}
+.productSideBody textarea{
+    height: 100px;
+    border-color: rgb(189, 186, 186);
+    padding: 10px;
+}
+/*.productSideFooter{
+    width: 0px;
+    margin-left: 750px;
+}*/
+.productSideFooter button{
+    height: 45px;
+    width: 250px;
+    margin-left: 10px;
+}
+.productSideFooter .btnCancel{
+    background-color: var(--light);
+    border: 0;
+    color: rgb(252, 52, 52);
+}
+.productSideFooter .btnCancel:hover{
+    background-color: rgb(245, 223, 219);
+}
+.productSideFooter .btnAdd{
+    background-color: var(--green);
+    border-color: var(--green);
+    color: var(--white);
+}
+.productSideFooter .btnAdd:hover{
+    background-color: #0b7451;
+}
+/*----------------------*/
+/*dashboardNavBars*/
+.dashboardNav{
+    background-color: var(--white);
+    width: 100%;
+}
+.dashboardNav ul,li,a{
+    display: inline-block;
+}
+.dashboardNav ul{
+    float: right;
+    padding: 10px;
+    margin-right: 20px;
+}
+.dashboardNav li{
+    padding: 5px;
+}
+.dashboardNav a{
+    color: var(--green);
+}
+.dashboardNav i{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+#notification{
+    background: rgb(235, 57, 57);
+    color: var(--white);
+    min-width: 16px;
+    line-height: 18px;
+    font-size: 13px;
+    position: absolute;
+    text-align: center;
+    right: 95px;
+}
+.dashboardNav .pre-scrollable{
+    margin-left: -220px;
+    height: 250px;
+    max-width: 300px;
+    padding: 10px;
+    
+}
+.notificationImgContainer img{
+    width: 25px !important;
+    height: 25px;
+    border: 1.5px solid #e9e5e5;
+}
+.pre-scrollable h6{
+    font-size: 13px;
+    margin-bottom: 5px;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    color: var(--gray);
+}
+.pre-scrollable div:hover{
+    background-color: #fdf6f6;
+}
+.pre-scrollable span{
+    font-size: 12px;
+}
+.pre-scrollable .stockOutSpan{
+    background-color: #ffdede;
+    color: red;
+}
+.pre-scrollable .dateTimeSpan{
+    color: rgb(158, 156, 156);
+}
+.pre-scrollable svg{
+    color: var(--green);
+    margin-top: 5px;
+}
+.pre-scrollable svg:hover{
+    color: #0b7451;
+}
+.imgProfileMenuLinkDiv a{
+    color: var(--gray);
+}
+.imgProfileMenuLinkDiv a:hover{
+    color: var(--green);
+}
+.imgProfileMenuLinkDiv svg{
+    width: 15px !important;
+    height: 15px !important;
+}
+.dashboardNav svg{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.dashboardNav img{
+    border-radius: 50%;
+    width: 35px;
+}
+#dashboardNavColor{
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
+.dbIconsList{
+    box-shadow: 0 4px 8px #0000001a;
+    padding: 20px;
+    background-color: #fff;
+    list-style-type: none;
+}
+.dbIconsList a{
+    display: block;
+}
+.sidebarOpenBtn{
+    display: none;
+}
+#lightModeIcon{
+    display: none;
+}
+.sidebarOpenBtn button{
+    background-color: transparent;
+    color: var(--green);
+}
+.closeSidebarbtn{
+    display: none;
+}
+.closeSidebarbtn i{
+    float: right;
+    margin-top: 5px;
+    font-size: 19px;
+    color: var(--green);
+}
+@media (max-width : 768px){
+    .sidebarOpenBtn{
+        display: block;
+        padding: 25px;
+    }
+    .closeSidebarbtn{
+        display: contents;
+    }
+}
+/*-------------------------------------*/
+#dashboardSidebar{
+    left: 0px;
+   color: #222;
+   background-color: var(--white);
+   font-size: 14px;
+   opacity: 1;
+   height: 100%;
+   overflow-y: scroll;
+   top: inherit;
+   position: fixed;
+   z-index: 999999;
+   padding: 20px;
+   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+}
+.dashboardSidebarIcons{
+    margin-top: 30px;
+}
+.dashboardSidebarIcons .active{
+    color: var(--green);
+}
+.dashboardSidebarIcons a{
+    color: var(--gray);
+    padding-left: 15px;
+}
+.dashboardSidebarIcons a:hover{
+    color: #0a3526;
+    text-decoration: none;
+}
+.dashboardSidebarIcons span{
+    margin: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.dashboardSidebarIcons svg{
+    width: 1.25rem;
+    height: 1.25rem;
+}.dashboardSidebarIcons li{
+    margin-top: 15px;
+}
+.dashboardSidebarIcons .categorySubMenu{
+    margin-top: 20px;
+    margin-left: 40px;
+    line-height: 1.3;
+    font-size: var(--paraSSize);
+    font-weight: 500;
+    color: var(--gray);
+}
+.categorySubMenu p:hover{
+    color: var(--dark);
+}
+.cartbottom button{
+    background-color: var(--green);
+    margin-top: 50px;
+    color: var(--white);
+    width: 250px;
+    height: 45px;
+}
+.cartbottom button:hover{
+    color: var(--white);
+}
+.cartbottom a:hover{
+    text-decoration: none;
+}
+.cartbottom button:hover{
+    background-color: #0b7451;
+}
+.dashboardContentDiv{
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 10px;
+    margin-left: -120px;
+}
+.dashboardContentDiv h3{
+    font-size: var(--fSize);
+    font-weight: bold;
+}
+.dashboardOrders{
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+    font-size: var(--paraLSize);
+    font-weight: 400;
+    color: var(--white) !important;
+}
+.dashboardOrders .price{
+    font-size: x-large;
+    font-weight: 600;
+    line-height: .8;
+}
+.dashboardOrders svg{
+    height: auto;
+    width: 20px;
+}
+.dashboardOrders p{
+    line-height: 2;
+}
+.dashboardOrdersToday{
+    background-color: var(--teal);
+}
+.dashboardOrdersMonth{
+    background-color: var(--blue);
+}
+.dashboardOrdersTotal{
+    background-color: var(--green);
+}
+.DBorders{
+    margin-top: 20px;
+    border-color: var(--dark);
+    text-align: center;
+    display: flex;
+    border-color: var(--dark);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    background-color: var(--white);
+    padding-top: 20px;
+    padding-left: 15px;
+    line-height: .7;
+    color: rgb(78, 76, 76);
+    font-size: 14px;
+}
+.DBorders .icon{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+}
+.DBorderstotal .icon{
+    color: rgb(255, 60, 0);
+    background-color: rgb(241, 194, 188);
+}
+.DBorders .orders{
+    font-size: x-large;
+    font-weight: 700;
+}
+.DBorders .para{
+    padding: 5px;
+    margin-left: 10px;
+}
+.DBorderspending .icon{
+    color: rgb(27, 58, 146);
+    background-color: rgb(188, 211, 241);
+}
+.DBordersprocess .icon{
+    color: rgb(26, 110, 71);
+    background-color: rgb(188, 241, 216);
+}
+.DBordersdeliver .icon{
+    color: rgb(16, 66, 43);
+    background-color: rgb(196, 226, 212);
+}
+#Products .addProductDiv{
+    margin-top: 25px;
+    background-color: var(--white);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    border: 1px solid rgb(224, 221, 221);
+    padding: 20px;
+}
+.addProductDiv button{
+    background-color: var(--green);
+    color: var(--white);
+}
+.addProductDiv button:hover{
+    background-color: #0b7451;
+    color: var(--white);
+}
+.DropCSV{
+    border: 1px solid var(--green);
+    border-style: dashed;
+    cursor: pointer;
+}
+.DropCSV label{
+    margin-left: 250px;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#UploadCSVBtn{
+    background-color: var(--light);
+    color: var(--dark);
+}
+/*data table*/
+#dashboardDataTable_length, #dashboardDataTable_filter{
+    display: none;
+}
+#dashboardDataTable_info{
+    font-size: var(--paraSSize);
+    margin-left: 15px;
+    font-weight: 500;
+}
+#dashboardDataTable_paginate span{
+    background-color: transparent !important;
+}
+#dashboardDataTable_paginate .current{
+    background-color: var(--green);
+    border: 0;
+}
+#dashboardDataTable_paginate a{
+    border: 0;
+}
+.dashboardTable th{
+    width: auto !important;
+}
+.dashboardTable{
+    font-size: var(--paraSSize);
+    text-align: center;
+    background-color: var(--white);
+}
+.dashboardTable span{
+    color: var(--green);
+    border-radius: 20px;
+    background-color: rgb(201, 243, 223);
+}
+.dashboardTable svg{
+    height: auto;
+    width: 20px;
+}
+.dashboardTable img{
+    width: 30px;
+    height: 30px;
+}
+.svgStyle svg{
+    color: var(--gray);
+    height: auto;
+    width: 15px;
+}
+.svgStyle svg:hover{
+    color: var(--green);
+}
+.svgStyle1 svg{
+    color: var(--gray);
+    height: auto;
+    width: 15px;
+}
+.svgStyle1 svg:hover{
+    color: red;
+}
+#deleteModal{
+    text-align: center;
+}
+#deleteModal svg{
+    color: red;
+    width: 30px;
+    height: auto;
+}
+#deleteModal h4{
+    font-size: 20px;
+}
+#deleteModal .modal-footer{
+    margin-right: 110px;
+    border-top: 0px !important;
+}
+#deleteModal .modal-footer .btnModal1{
+    color: #8b8585;
+    background-color: #e4e8eb;
+    border-color: #e4e8eb;
+}
+#deleteModal .modal-footer .btnModal1:hover{
+    color: #8b8585;
+    background-color: var(--white);
+    border-color: var(--white);
+}
+#deleteModal .modal-footer .btnModal2{
+    color: var(--white);
+    background-color: var(--green);
+    border-color: var(--green);
+}
+#deleteModal .modal-footer .btnModal2:hover{
+    background-color: #0b7451;
+    border-color: #0b7451;
+}
+@media (max-width : 768px){
+    #dashboardSidebar{display: none;}
+    .dashboardContentDiv{
+        padding-left: 130px;
+        margin-top: 30px;
+    }
+    .DropCSV label {margin-left: 0px;}
+}
+@media (max-width : 1024px){
+    #dashboardSidebar{right: 800px;}
+}
+/*-----------------------Product Details-----------------------------*/
+.productDetailsContainer h1{
+    font-size: var(--fSize);
+}
+.productDetailsContainer img, .proDetail{
+    margin-top: 20px;
+}
+.productDetailsContainer img{
+    width: 100%;
+}
+.proDetail{
+    padding: 20px;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: .55;
+}
+.proDetail p{
+    color: var(--gray);
+}
+.proDetail span{
+    color: var(--green);
+}
+.proDetail h2{
+    font-size: 23px;
+    font-weight: 700;
+}
+.proDetail div .productPrice{
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+}
+.instockSpan{
+    color: var(--green) !important;
+    background-color: rgb(201, 243, 223);
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+.proDetail div span{
+    color: var(--gray);
+}
+.productDummyPara p{
+    margin-top: 25px;
+    font-size: var(--paraSSize);
+    font-weight: 400;
+    line-height: 2;
+}
+.productDummyCategory p{
+    color: rgb(49, 49, 49);
+    font-weight: 700;
+}
+.babycareSpan span{
+    background-color: rgb(215, 221, 219);
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 13px;
+}
+.proDetail button{
+    margin-top: 40px;
+    background-color: var(--green);
+    border: 0;
+    color: var(--white);
+}
+.proDetail button:hover{
+    background-color: #0b7451;
+    border: 0;
+    color: var(--white);
+}
+/*-------------------------------------------*/
+/*Statistics--- Charts*/

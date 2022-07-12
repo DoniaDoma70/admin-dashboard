@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="css/bootstrap.css">
+    <link rel='stylesheet' type='text/css' media='screen' href="css/main.css">
+    <link rel='stylesheet' href="css/fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <!--login-->
+    <section id="login">
+        <div class="container">
+            <div class="loginContainer" style="background-color: white;">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="loginImgContainer">
+                            <img src="img/loginImg.jpeg">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="loginFormContainer">
+                            <h1>Login</h1>
+                            <form>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="loginFormControlInput">Email</label>
+                                        <input type="email" class="form-control" id="loginFormControlInput" placeholder="name@example.com" value="admin@gmail.com">
+                                    </div>
+                                    <div class="row">
+                                        <label class="mt-4" for="loginFormControlPassword">Password</label>
+                                        <input type="password" class="form-control" id="loginFormControlPassword" placeholder="**********" value="123456789">
+                                    </div>
+                                    <div class="row">
+                                        <a href="dashboard.html" class="loginBtn btn-block"><button type="button" class="submitForm btn btn-block btn-lg">Login</button></a>
+                                    </div>
+                                </div>
+                                <hr class="mt-4">
+                            </form>
+                            <div class="socialandForgetPass">
+                                <a href="" class="btn-block">
+                                    <button type="button" class="loginFb submitForm btn btn-block btn-lg"><i class="fa-brands fa-facebook-f"></i><span>Login With Facebook</span></button>
+                                </a>
+                                <a href="" class="btn-block">
+                                    <button type="button" class="loginG submitForm btn btn-block btn-lg"><i class="fa-brands fa-google"></i><span>Login With Google</span></button>
+                                </a>
+                                <a href="forgotPassword.html" class="ForgotAndCreateLinks mt-4">Forgot your password?</a><br>
+                                <a href="createAccount.html" class="ForgotAndCreateLinks">Create account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
